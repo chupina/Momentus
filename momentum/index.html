@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/owfont-regular.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    
+    <title>momentus</title>
+  </head>
+  <body>
+    <div class="controls">
+      <button id ="todoBtn"><span class="material-icons"> list</span></button>
+      <button><span class="material-icons btn">autorenew</span></button>
+      <button><span class="material-icons">settings</span></button>
+    </div>
+    <div class="weather">
+      <div class="city" contenteditable="true">Dallas</div>
+      <i class="weather-icon owf"></i>
+      <div class="temperature"></div>
+      <div class="weather-description"></div>
+      <div class="weather-wind"></div>
+      <div class="weather-hum"></div>
+    </div>
+    <h1>
+      <span class="greeting"></span>
+      <span class="name" contenteditable="true"></span>
+    </h1>
+    <div id="time">
+     <time class="time"></time>
+    <h3 class="day"></h3> 
+    </div>
+     
+   <div id="focus">
+    <h2 class="focusHeader">What Is Your Focus For Today?</h2>
+    <h2><span class="focus" contenteditable="true"></span></h2>
+
+   </div>
+    
+<div id="quote" class="wrapper-q">
+
+  <figure class="quote">
+    <blockquote>Have a wonderful day!</blockquote>
+    <figcaption></figcaption>
+  </figure>
+  <a class="btn2">Get more quotes</a>
+</div>
+   
+  
+   
+    
+    
+    <div id="slide" class="swiper-container">
+      <div class="swiper-wrapper">
+        
+        <div class="swiper-slide" style="background-image:url(assets/photos/01.JPG)"></div>
+        <div class="swiper-slide" style="background-image:url(assets/photos/02.JPG)"></div>
+        <div class="swiper-slide" style="background-image:url(assets/photos/05.JPG)"></div>
+        <div class="swiper-slide" style="background-image:url(assets/photos/06.JPG)"></div>
+        <div class="swiper-slide" style="background-image:url(assets/photos/07.JPG)"></div>
+        <div class="swiper-slide" style="background-image:url(assets/photos/08.JPG)"></div>
+        <div class="swiper-slide" style="background-image:url(assets/photos/10.JPG)"></div>
+        <div class="swiper-slide" style="background-image:url(assets/photos/11.JPG)"></div>
+        <div class="swiper-slide" style="background-image:url(assets/photos/12.JPG)"></div>
+        <div class="swiper-slide" style="background-image:url(assets/photos/13.JPG)"></div>
+        <div class="swiper-slide" style="background-image:url(assets/photos/14.JPG)"></div>
+        <div class="swiper-slide" style="background-image:url(assets/photos/15.JPG)"></div>
+        <div class="swiper-slide" style="background-image:url(assets/photos/16.JPG)"></div>
+        <div class="swiper-slide" style="background-image:url(assets/photos/17.JPG)"></div>
+        <div class="swiper-slide" style="background-image:url(assets/photos/18.JPG)"></div>
+        <div class="swiper-slide" style="background-image:url(assets/photos/19.JPG)"></div>
+        <div class="swiper-slide" style="background-image:url(assets/photos/20.JPG)"></div>
+        <div class="swiper-slide" style="background-image:url(assets/photos/22.JPG)"></div>
+        <div class="swiper-slide" style="background-image:url(assets/photos/23.JPG)"></div>
+        <div class="swiper-slide" style="background-image:url(assets/photos/12.JPG)"></div>
+        
+      </div>
+      <!-- Add Pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+    
+    
+    
+    
+    <div class="wrapper" id="todo">
+      <header id="todoheader">PLAN FOR TODAY</header>
+      <div class="inputField">
+        <input type="text" placeholder="Add new todo" />
+        <button><span class="material-icons">add</span></button>
+      </div>
+      <ul class="todoList">
+        <!-- data are comes from local storage -->
+      </ul>
+      <div class="footer">
+        <span>You have <span class="pendingTasks"></span> pending tasks</span>
+        <button>Clear All</button>
+      </div>
+    </div>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
